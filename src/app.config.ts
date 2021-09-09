@@ -3,7 +3,8 @@ export default {
     'pages/index/index',
     'pages/cell/index',
     'pages/button/index',
-    'pages/action-sheet/index'
+    'pages/action-sheet/index',
+    'pages/popup/index',
   ],
   window: {
     backgroundTextStyle: 'light',

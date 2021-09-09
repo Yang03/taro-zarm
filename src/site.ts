@@ -29,6 +29,11 @@ const siteMap = {
         name: '动作面板',
         page: '/pages/action-sheet/index', 
       },
+      {
+        key: 'Popup',
+        name: '动作面板',
+        page: '/pages/popup/index', 
+      },
     ]
   }
 }
