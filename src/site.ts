@@ -10,11 +10,11 @@ const siteMap = {
   view: {
     title: '数据展示',
     components: [
-    // {
-    //   key: 'Panel',
-    //   name: '面板',
-    //   page: '/pages/panel/index', 
-    // },
+    {
+      key: 'badge',
+      name: '徽标',
+      page: '/pages/badge/index', 
+    },
     {
       key: 'Cell',
       name: '列表项',
@@ -35,7 +35,18 @@ const siteMap = {
         page: '/pages/popup/index', 
       },
     ]
+  },
+  test: {
+    title: '测试',
+    components: [
+      {
+        key: 'react spring',
+        name: '动画',
+        page: '/pages/test/index', 
+      },
+    ]
   }
+  
 }
 
-export default siteMap;
+export default siteMap

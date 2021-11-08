@@ -23,6 +23,8 @@ const Demo = () => {
   const [visible2, setVisible2] = useState(false);
   const [visible3, setVisible3] = useState(false);
 
+  console.log(visible1)
+
   return (
     <>
       <Cell

@@ -1,0 +1,36 @@
+// button {
+//   line-height: 2.55555556 !important;
+// }
+ 
+
+ .custom-panel {
+   display: flex;
+   justify-content: flex-start;
+   padding: 25px 0 0 0;
+   flex-flow: wrap;
+ }
+
+ .custom-panel .box {
+  width: 25%;
+  margin-bottom: 25px;
+  text-align: center;
+ }
+
+
+ .text-panel {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: flex-start;
+
+  .box-text {
+    padding-right: 10px;
+  }
+ }
+
+ .text-panel .box {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+ }
+
+

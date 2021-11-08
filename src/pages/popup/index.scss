@@ -26,13 +26,13 @@
 }  
 
 
-.za-popup--show {
-  visibility: visible;
-}
-
-.za-popup--hidden {
+.za-fade-leave {
   visibility: hidden;
 }
+
+// .za-popup--hidden {
+//   visibility: hidden;
+// }
 
 // .za-fade-enter {
 //   visibility: visible;

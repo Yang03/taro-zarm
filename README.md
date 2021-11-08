@@ -14,7 +14,7 @@
 |  组件  | 是否支持 |  备注  |
 | :---- | :------ | :---- |
 | Button | ✓ | |
-| Icon | ✗ | |
+| Icon | ✗ | 不支持`svg`|
 
 
 ### 数据录入
@@ -39,7 +39,7 @@
 ### 数据展示
 |  组件  | 是否支持 |  备注  |
 | :---- | :------ | :---- |
-| Badge | - | |
+| Badge | - | ✓|
 | Carousel | - | |
 | Cell | ✓ | |
 | Collapse | - | |
@@ -55,7 +55,7 @@
 |  组件  | 是否支持 |  备注  |
 | :---- | :------ | :---- |
 | ActionSheet | ✓ | |
-| ActivityIndicator | ✗ | |
+| ActivityIndicator | ✗ | 不支持`svg` |
 | Loading | - | |
 | Message | - | |
 | Modal | - | |

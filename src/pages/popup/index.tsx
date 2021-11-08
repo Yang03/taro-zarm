@@ -108,6 +108,7 @@ const Demo = () => {
         mask={false}
         afterClose={() => console.log('关闭')}
         mountContainer={false}
+        destroy
       >
         <div className='popup-box-top'>更新成功</div>
       </Popup>
@@ -118,7 +119,7 @@ const Demo = () => {
         onMaskClick={() => toggle('popBottom')}
         afterOpen={() => console.log('打开')}
         afterClose={() => console.log('关闭')}
-        destroy={false}
+        destroy
         mountContainer={false}
       >
         <div className='popup-box'>
@@ -144,6 +145,7 @@ const Demo = () => {
         direction='left'
         afterClose={() => console.log('关闭')}
         mountContainer={false}
+        destroy
       >
         <div className='popup-box-left'>
           <Button size='xs' onClick={() => toggle('popLeft')}>
@@ -158,6 +160,7 @@ const Demo = () => {
         direction='right'
         afterClose={() => console.log('关闭')}
         mountContainer={false}
+        destroy
       >
         <div className='popup-box-right'>
           <Button size='xs' onClick={() => toggle('popRight')}>
@@ -172,6 +175,7 @@ const Demo = () => {
         width='70%'
         afterClose={() => console.log('关闭')}
         mountContainer={false}
+        destroy
       >
         <div className='popup-box'>
           <Button size='xs' onClick={() => toggle('popCenter')}>
