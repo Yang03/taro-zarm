@@ -10,16 +10,21 @@ const siteMap = {
   view: {
     title: '数据展示',
     components: [
-    {
+      {
+        key: 'input',
+        name: '输入框',
+        page: '/pages/input/index', 
+      },
+      {
       key: 'badge',
       name: '徽标',
       page: '/pages/badge/index', 
-    },
-    {
-      key: 'Cell',
-      name: '列表项',
-      page: '/pages/cell/index', 
-    },]
+      },
+      {
+        key: 'Cell',
+        name: '列表项',
+        page: '/pages/cell/index', 
+      },]
   },
   feedback: {
     title: '操作反馈',
@@ -33,6 +38,16 @@ const siteMap = {
         key: 'Popup',
         name: '动作面板',
         page: '/pages/popup/index', 
+      },
+    ]
+  },
+  navigation: {
+    title: '导航',
+    components: [
+      {
+        key: 'TabBar',
+        name: '标签栏',
+        page: '/pages/tab-bar/index', 
       },
     ]
   },

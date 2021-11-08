@@ -13,7 +13,7 @@
 
 |  组件  | 是否支持 |  备注  |
 | :---- | :------ | :---- |
-| Button | ✓ | |
+| Button | ✓ | ts需要添加openType等的支持 |
 | Icon | ✗ | 不支持`svg`|
 
 
@@ -24,7 +24,7 @@
 | checkbox | - | |
 | DatePicker | - | |
 | FilePicker | - | |
-| Input | - | |
+| Input | - | 不支持自定义键盘|
 | Keyboard | - | |
 | Picker | - | |
 | Radio | - | |
@@ -39,7 +39,7 @@
 ### 数据展示
 |  组件  | 是否支持 |  备注  |
 | :---- | :------ | :---- |
-| Badge | - | ✓|
+| Badge | ✓| |
 | Carousel | - | |
 | Cell | ✓ | |
 | Collapse | - | |
@@ -71,5 +71,5 @@
 | :---- | :------ | :---- |
 | Affix | - | |
 | NavBar | - | |
-| TabBar | - | |
+| TabBar | ✓ | |
 | Tabs | - | |

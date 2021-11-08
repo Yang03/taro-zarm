@@ -68,6 +68,8 @@ export default {
     'pages/action-sheet/index',
     'pages/popup/index',
     'pages/badge/index',
+    'pages/input/index',
+    'pages/tab-bar/index',
     'pages/test/index'
   ],
   window: {
