@@ -1,3 +1,5 @@
+import { resolve as _resolve } from 'path'
+// import constparse from 
 const config = {
   projectName: 'taro-antd',
   date: '2021-3-31',
@@ -12,7 +14,8 @@ const config = {
   plugins: [
     ['@tarojs/plugin-html', {
       pxtransformBlackList: [/am-/, /demo-/, /^body/]
-    }]
+    }],
+    
   ],
   defineConstants: {
   },
@@ -24,6 +27,9 @@ const config = {
   },
   framework: 'react',
   mini: {
+    alias: {
+      react: _resolve('./node_modules/react')
+    },
     miniCssExtractPluginOption: {
       ignoreOrder: true
     },
@@ -42,6 +48,20 @@ const config = {
         config: {
           namingPattern: 'module', // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]'
+        }
+      },
+      'postcss-transform-selector': {
+        enable: true,
+        config: {
+          selector: ':root, page',
+          transform: (decl) => {
+            var oldValue = decl.value
+            const val = oldValue.replace(/(\d*\.?\d+)(rpx)/g, (match, value, unit) => {
+              return parseInt(value, 10) * 2 + unit;
+            })
+    
+            decl.value = val;
+          }
         }
       }
     }

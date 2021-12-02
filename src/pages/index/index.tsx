@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
-import { Cell, Panel } from 'zarm'
+import { List, Panel } from 'zarm'
 import Taro from '@tarojs/taro';
 import siteMap from '../../site';
 
@@ -24,11 +24,13 @@ export default class Index extends Component {
       const keys = Object.keys(siteMap);
       return keys.map((key) => {
         return  (<Panel title={`${siteMap[key].title} (${siteMap[key].components.length})`} key={key}>
-          {
-            siteMap[key].components.map((c) => {
-              return (<Cell hasArrow key={c.key} onClick={() => Taro.navigateTo({ url: c.page })}>{c.key}<Text className='zh'>{c.name}</Text></Cell>)
-            })
-          }
+          <List>
+            {
+              siteMap[key].components.map((c) => {
+                return (<List.Item hasArrow key={c.key} onClick={() => Taro.navigateTo({ url: c.page })} title={<View>{c.key}<Text className='zh'>{c.name}</Text></View>} />)
+              })
+            }
+          </List>
           </Panel>)
       })
        

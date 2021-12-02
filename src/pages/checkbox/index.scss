@@ -1,0 +1,23 @@
+
+input[type="hidden"] {
+  display: none;
+}
+ 
+.za-checkbox__text {
+  display: inline-block;
+  font-size: 24px;
+  z-index: 1111;
+}
+
+.za-checkbox__input {
+  z-index: 1111;
+}
+
+view {
+  box-sizing: border-box;
+}
+
+.za-checkbox {
+  vertical-align: bottom;
+  margin-bottom: 0 !important;
+}

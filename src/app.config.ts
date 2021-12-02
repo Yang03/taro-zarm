@@ -64,13 +64,17 @@ export default {
   pages: [
     'pages/index/index',
     'pages/button/index',
-    'pages/cell/index',
-    'pages/action-sheet/index',
-    'pages/popup/index',
-    'pages/badge/index',
-    'pages/input/index',
-    'pages/tab-bar/index',
-    'pages/test/index'
+    // 'pages/cell/index',
+    // 'pages/action-sheet/index',
+    // 'pages/popup/index',
+    // 'pages/badge/index',
+    // 'pages/input/index',
+    // 'pages/tab-bar/index',
+    // 'pages/stepper/index',
+    // 'pages/keyboard/index',
+    // 'pages/radio/index',
+    'pages/checkbox/index',
+    // 'pages/test/index'
   ],
   window: {
     backgroundTextStyle: 'light',

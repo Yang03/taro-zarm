@@ -7,24 +7,52 @@ const siteMap = {
       page: '/pages/button/index'
     }]
   },
-  view: {
-    title: '数据展示',
+  input: {
+    title: '数据录入',
     components: [
       {
-        key: 'input',
+        key: 'Checkbox',
+        name: '复选框',
+        page: '/pages/checkbox/index',
+      },
+      {
+        key: 'Input',
         name: '输入框',
         page: '/pages/input/index', 
       },
       {
-      key: 'badge',
-      name: '徽标',
-      page: '/pages/badge/index', 
+        key: 'Keyboard',
+        name: '键盘',
+        page: '/pages/keyboard/index', 
       },
       {
-        key: 'Cell',
+        key: 'Radio',
+        name: '复选框',
+        page: '/pages/radio/index',
+      },
+      {
+        key: 'Stepper',
+        name: '步进器',
+        page: '/pages/stepper/index', 
+      },
+    ]
+  },
+  view: {
+    title: '数据展示',
+    components: [
+      
+      {
+        key: 'badge',
+        name: '徽标',
+        page: '/pages/badge/index', 
+      },
+      {
+        key: 'List',
         name: '列表项',
-        page: '/pages/cell/index', 
-      },]
+        page: '/pages/list/index', 
+      },
+      
+    ]
   },
   feedback: {
     title: '操作反馈',
@@ -52,7 +80,7 @@ const siteMap = {
     ]
   },
   test: {
-    title: '测试',
+    title: '动画',
     components: [
       {
         key: 'react spring',

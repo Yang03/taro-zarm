@@ -30,8 +30,8 @@
 | Radio | - | |
 | SearchBar | - | |
 | Slider | - | |
-| StackPicker | - | |
-| Stepper | - | |
+| StackPicker | ✓ | icon不支持 |
+| Stepper | ✓ | icon不支持 |
 | Switch | - | |
 
 

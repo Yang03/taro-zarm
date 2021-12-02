@@ -1,5 +1,5 @@
 import { View } from '@tarojs/components'
-import { Panel, Cell, Badge } from 'zarm'
+import { Panel, List, Badge } from 'zarm'
 import './index.scss'
 
 function Demo() {
@@ -8,37 +8,39 @@ function Demo() {
     <Panel
       title='基本用法'
     >
-      <Cell hasArrow title='点状' description={<Badge />} onClick={() => {}} />
-      <Cell
-        hasArrow
-        title='直角'
-        description={<Badge shape='rect' text='免费' />}
-        onClick={() => {}}
-      />
-      <Cell
-        hasArrow
-        title='圆角'
-        description={<Badge shape='radius' text='new' />}
-        onClick={() => {}}
-      />
-      <Cell
-        hasArrow
-        title='椭圆角'
-        description={<Badge shape='round' text='999+' />}
-        onClick={() => {}}
-      />
-      <Cell
-        hasArrow
-        title='圆形'
-        description={<Badge shape='circle' text={3} />}
-        onClick={() => {}}
-      />
-      <Cell
-        hasArrow
-        title='叶形'
-        description={<Badge shape='leaf' text='新品' />}
-        onClick={() => {}}
-      />
+      <List>
+        <List.Item hasArrow title='点状' info={<Badge />} onClick={() => {}} />
+        <List.Item
+          hasArrow
+          title='直角'
+          info={<Badge shape='rect' text='免费' />}
+          onClick={() => {}}
+        />
+        <List.Item
+          hasArrow
+          title='圆角'
+          info={<Badge shape='radius' text='new' />}
+          onClick={() => {}}
+        />
+        <List.Item
+          hasArrow
+          title='椭圆角'
+          info={<Badge shape='round' text='999+' />}
+          onClick={() => {}}
+        />
+        <List.Item
+          hasArrow
+          title='圆形'
+          info={<Badge shape='circle' text={3} />}
+          onClick={() => {}}
+        />
+        <List.Item
+          hasArrow
+          title='叶形'
+          info={<Badge shape='leaf' text='新品' />}
+          onClick={() => {}}
+        />
+      </List>
     </Panel>
     <Panel title='多主题'>
       <div className='custom-panel'>

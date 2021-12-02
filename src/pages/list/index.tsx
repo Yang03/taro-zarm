@@ -1,23 +1,23 @@
 import { View } from '@tarojs/components'
-import { Cell, Panel } from 'zarm'
+import { List, Panel } from 'zarm'
 import './index.scss'
 
-function CellDemo() {
+function Demo() {
  return (
   <View>
     <Panel
       title='基本用法'
     >
-      <Cell title='标题文字'></Cell>
+     <List> <List.Item title='标题文字' /></List>
     </Panel>
 
     <Panel
       title='带描述'
     >
-      <Cell title='标题文字' description='描述文字'></Cell>
+      <List><List.Item title='标题文字' info='描述文字' /></List>
     </Panel>
   </View>
  )
 }
 
-export default CellDemo;
+export default Demo;

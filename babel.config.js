@@ -8,13 +8,27 @@ module.exports = {
       ts: true
     }]
   ],
+  // plugins: [['import', {
+  //   libraryName: 'zarm',
+  //   customName: (name) => {
+  //     return `zarm/lib/${name}/index.js`;
+  //   },
+  //   customStyleName: (name) => {
+  //     return `zarm/lib/${name}/style/index.taro.js`;
+  //   }
+  // }]]
   plugins: [['import', {
     libraryName: 'zarm',
+    // style: true,
     customName: (name) => {
       return `zarm/lib/${name}/index.js`;
     },
     customStyleName: (name) => {
-      return `zarm/lib/${name}/style/index.taro.js`;
+      return `zarm/lib/${name}/style/index.js`;
     }
+    // style: (name) => {
+    //   console.log(name)
+    //   return name;
+    // }
   }]]
 }

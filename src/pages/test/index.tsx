@@ -1,6 +1,8 @@
 import { a, useSpring, config } from '@react-spring/web'
-
+import { useGesture } from '@use-gesture/react'
 import styles from './styles.module.scss'
+import { List } from 'zarm';
+
 
 const items = ['save item', 'open item', 'share item', 'delete item', 'cancel']
 const height = items.length * 60 + 80
@@ -35,6 +37,23 @@ function App() {
   //   { from: () => [0, y.get()], filterTaps: true, bounds: { top: 0 }, rubberband: true }
   // )
 
+  const bind = useGesture({
+    'onTouchStart': (s) => {
+      console.log(s)
+    },
+    'onTouchMove': (s) => {
+      console.log(s)
+    }
+   })
+
+  const events = bind();
+  // const events = {
+  //   touchStart: e.onKeyDown,
+  //   touchMove: e.onKeyUp,
+  //   touchEnd: e.onMouseDown,
+  // }
+  console.log(events)
+
   const display = y.to((py) => (py < height ? 'block' : 'none'))
 
   const bgStyle = {
@@ -63,6 +82,13 @@ function App() {
           />
         ))}
       </a.div>
+
+      <div className={styles.test} {...events}></div>
+      <List>
+        <List.Item hasArrow title="Item 1" onClick={() => {}} />
+        <List.Item hasArrow title="Item 2" onClick={() => {}} />
+        <List.Item hasArrow title="Item 3" onClick={() => {}} />
+      </List>
     </div>
   )
 }
